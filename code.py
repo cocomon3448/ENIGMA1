@@ -24,11 +24,11 @@ rotor3 = rotor3_F.readlines()
 rotor3 = str(rotor3).replace("'","").replace("[","").replace("]","").split()
 rotor3_F.close()
 
-narzi_input = input("암호화/복호화 할 문자열: ")
-setting_rotor_input = input("로터 세팅: ")
+narzi_input = input("Strings to Encrypt/Decode: ")
+setting_rotor_input = input("Rotor Setting(NOT WORK JUST PRESS ENTER): ")
 setting_rotor_lst = []
 
-setting_key_input = input("키 세팅: ")
+setting_key_input = input("KEY SETTING: ")
 setting_key_lst = []
 
 setting_rotor_lst = setting_rotor_input.split(" ")
@@ -167,4 +167,4 @@ for i in range(0, len(result)):
     else:
         final_result += result[i]
 
-print("FINAL RESULT: "+final_result)
+print("RESULT: "+final_result)
