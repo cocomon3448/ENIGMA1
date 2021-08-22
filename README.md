@@ -1,5 +1,5 @@
 # ENIGMA1
-## _ENIGMA1 USED IN WW2, THE BEST..._
+## _ENIGMA1 USED IN WW2_
 
 ## Features
 - Encrypt string
@@ -12,3 +12,5 @@
 - Clone code
 - Run code
 - Input some strings and numbers
+
+COPYRIGHT BY rammer3448(나 맞으니까 제발 이슈에 이상한 댓글 달지 말자^^)
