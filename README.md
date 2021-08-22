@@ -13,4 +13,4 @@
 - Run code
 - Input some strings and numbers
 
-COPYRIGHT BY rammer3448(나 맞으니까 제발 이슈에 이상한 댓글 달지 말자^^)
+COPYRIGHT BY rammer(나 맞으니까 제발 이슈에 이상한 댓글 달지 말자^^)
