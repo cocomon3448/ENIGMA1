@@ -24,15 +24,28 @@ rotor3 = rotor3_F.readlines()
 rotor3 = str(rotor3).replace("'","").replace("[","").replace("]","").split()
 rotor3_F.close()
 
-narzi_input = input("Strings to Encrypt/Decode: ")
-setting_rotor_input = input("Rotor Setting(NOT WORK JUST PRESS ENTER): ")
+narzi_input = input("ENCRYPT/DECODE STRING: ")
+setting_rotor_input = input("ROTOR NO: ")
 setting_rotor_lst = []
 
-setting_key_input = input("KEY SETTING: ")
+setting_key_input = input("ROTOR SETTING: ")
 setting_key_lst = []
+
+rotor_type_1_turn = 18
+rotor_type_2_turn = 6
+rotor_type_3_turn = 23
+rotor_type_lst = [rotor1,rotor2,rotor3]
+rotor_type_turn_lst = [rotor_type_1_turn, rotor_type_2_turn, rotor_type_3_turn]
 
 setting_rotor_lst = setting_rotor_input.split(" ")
 setting_key_lst = setting_key_input.split(" ")
+
+rotor3 = rotor_type_lst[int(setting_rotor_lst[0])-1]
+rotor2 = rotor_type_lst[int(setting_rotor_lst[1])-1]
+rotor1 = rotor_type_lst[int(setting_rotor_lst[2])-1]
+rotor3_turn = rotor_type_turn_lst[int(setting_rotor_lst[0])-1]
+rotor2_turn = rotor_type_turn_lst[int(setting_rotor_lst[1])-1]
+rotor1_turn = rotor_type_turn_lst[int(setting_rotor_lst[2])-1]
 
 output = ""
 for i in range(0, len(narzi_input)):
@@ -103,7 +116,7 @@ def rotor_c_up():
 
 setRotorNum()
 for i in range(0,len(output)):
-    if int(setting_key_lst[1]) == 5:
+    if int(setting_key_lst[1]) == rotor2_turn-1:
             rotor_c_up()
             setting_key_lst[0] = str(int(setting_key_lst[0])+1)
             rotor_b_up()
@@ -111,7 +124,7 @@ for i in range(0,len(output)):
     if int(setting_key_lst[2]) <= 26:
         rotor_a_up()
         setting_key_lst[2] = str(int(setting_key_lst[2]) + 1)
-    if int(setting_key_lst[2]) == 18:
+    if int(setting_key_lst[2]) == rotor1_turn:
         rotor_b_up()
         setting_key_lst[1] = str(int(setting_key_lst[1]) + 1)
             
@@ -167,4 +180,4 @@ for i in range(0, len(result)):
     else:
         final_result += result[i]
 
-print("RESULT: "+final_result)
+print("FINAL RESULT: "+final_result)
