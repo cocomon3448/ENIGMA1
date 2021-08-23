@@ -7,6 +7,7 @@
 - Can set rotor setting.. EX) 1 2 3
 - Can set rotor - working now ex) 1 3 2
 - Can set Plug Board in plug_board.txt ex) E-F B-P
+- Can set rings - not working for now
 
 ## HOW TO USE?
 - Clone code
