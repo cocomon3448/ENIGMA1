@@ -165,8 +165,6 @@ for i in range(0,len(output)):
 
     result += normal_abc[rotor1.index(select_char_e)]
     # print(result)
-
-    print(normal_abc[int(str(setting_key_lst[0]))-1],normal_abc[int(str(setting_key_lst[1]))-1],normal_abc[int(str(setting_key_lst[2]))-1],"\b:",normal_abc[rotor1.index(select_char_e)])
     
 final_result = ""
 
